@@ -4,7 +4,9 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "packageDarwin": "electron-packager . 'electronGo' --platform=darwin --arch=x64  --out=./dist --asar --app-version=1.0.0",
+    "packWin": "electron-packager . 'electronGoWin' --platform=win32 --arch=x64  --out=./dist --asar --app-version=1.0.0"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,6 +19,7 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^7.1.3"
+    "electron": "^7.1.3",
+    "electron-packager": "^14.1.0"
   }
 }
